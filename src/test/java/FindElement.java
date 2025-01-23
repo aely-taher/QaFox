@@ -24,7 +24,7 @@ public class FindElement {
         for(WebElement searchItem : searchList) {
             System.out.println(searchItem.getText());
         }
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
 
 
 
