@@ -13,6 +13,7 @@ public class BaseTest {
         WebDriver driver = new ChromeDriver();
         driver.get("https://tutorialsninja.com/demo/index.php"); //get url
         driver.manage().window().maximize(); //maximize the window
+
         driver.findElement(By.xpath("//a[@title='My Account']")).click();
         driver.findElement(By.xpath("//a[text()='Register']")).click();
         driver.findElement(By.xpath("//input[@id='input-firstname']")).sendKeys("Taslima Taher");

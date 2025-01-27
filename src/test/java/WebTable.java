@@ -19,6 +19,7 @@ public class WebTable {
         WebDriver driver = new ChromeDriver();
         driver.get("https://demoqa.com/webtables");
         driver.manage().window().maximize();
+
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         JavascriptExecutor js = (JavascriptExecutor) driver;
 

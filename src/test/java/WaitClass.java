@@ -28,6 +28,7 @@ public class WaitClass {
         List<WebElement> searchList = wait.until(ExpectedConditions.visibilityOfAllElements(driver.findElements(By.xpath("//span/a/h3"))));
         for (int i = 0; i < searchList.size(); i++) {
             System.out.println(searchList.get(i).getText());
+
         }
 
     }

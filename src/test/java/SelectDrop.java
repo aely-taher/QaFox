@@ -15,6 +15,7 @@ public class SelectDrop {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.get("https://the-internet.herokuapp.com/dropdown");
+
         driver.manage().window().maximize();
         WebElement dropdown = driver.findElement(By.tagName("select"));
         Select drop = new Select(dropdown);

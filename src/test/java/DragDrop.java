@@ -27,6 +27,7 @@ public class DragDrop {
         WebElement source = driver.findElement(By.xpath("//div[@id='column-a']"));
         WebElement target = driver.findElement(By.xpath("//div[@id='column-b']"));
         action.dragAndDrop(source, target).build().perform();
+
     }
     }
 

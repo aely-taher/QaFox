@@ -23,6 +23,7 @@ public class FindElement {
         List<WebElement> searchList = driver.findElements(By.xpath("//span/a/h3"));
         for(WebElement searchItem : searchList) {
             System.out.println(searchItem.getText());
+
         }
         //driver.manage().window().maximize();
 

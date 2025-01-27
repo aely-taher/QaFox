@@ -19,5 +19,6 @@ public class MouseHover {
         WebElement mouse = driver.findElement(By.xpath("(//div[@class='figure']/img)[2]"));
         action.moveToElement(mouse).build().perform();
         driver.findElement(By.xpath("//a[@href='/users/2']")).click();
+
     }
 }

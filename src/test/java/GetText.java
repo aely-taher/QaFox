@@ -18,6 +18,7 @@ public class GetText {
         String country = countryValue.getText();
         System.out.println(country);
 
+
         //Implicit Wait
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
