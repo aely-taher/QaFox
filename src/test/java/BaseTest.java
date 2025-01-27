@@ -9,10 +9,10 @@ public class BaseTest {
 
     @Test
     public void test() {
-        WebDriverManager.chromedriver().setup();
+        WebDriverManager.chromedriver().setup(); //driver set up
         WebDriver driver = new ChromeDriver();
-        driver.get("https://tutorialsninja.com/demo/index.php");
-        driver.manage().window().maximize();
+        driver.get("https://tutorialsninja.com/demo/index.php"); //get url
+        driver.manage().window().maximize(); //maximize the window
         driver.findElement(By.xpath("//a[@title='My Account']")).click();
         driver.findElement(By.xpath("//a[text()='Register']")).click();
         driver.findElement(By.xpath("//input[@id='input-firstname']")).sendKeys("Taslima Taher");
